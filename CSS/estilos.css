@@ -1,12 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background-image: url("https://www.logotipo.pt/wp-content/uploads/2010/09/rolling.jpg");
+    background-image: url("../img/lingua-rs.jpg");
     background-size: 100vw 100vh;
     font-family: arial;
-    backdrop-filter: blur(8px)
+    backdrop-filter: blur(9px)
+  }
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .menu {
     background-color: white;
     font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+  .menu a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
   }
   a{
    color: red;
@@ -26,4 +45,22 @@ body {
   .site-title, .site-subtitle {
     color: black;
     text-align: center;
+  }
+  .img-portfolio {
+    width: 400px;
+    height: 400px;
+  }
+  section {
+    height: 90vh;
+    width: 100vw;
+  }
+  section h2 {
+    padding: 10px;
+    color: red;
+    font-size: 25px;
+  }
+  figcaption {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
   }
