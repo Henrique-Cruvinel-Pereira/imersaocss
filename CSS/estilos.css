@@ -7,26 +7,43 @@ body {
     background-image: url("../img/RHCP.jpg");
     background-size: 100vw 100vh;
     font-family: 'Turret Road', cursive;
-    backdrop-filter: blur(5px);
-    font-size: 14px;
+    font-size: 12px;
     color: white;
+    width: 320px;
+    height: 538px;
   }
-  @media (max-width: 320px) {
+  @media (max-width: 340px) {
     body {
-      font-size: 12px;
+      background-size: 120vw 100vh;
     }
   }
-  @media (min-width: 700px) {
-      body {
-        font-size: 16px;
-      }
+  @media (min-width: 768px) {
+    .sobre .grid {
+     display: grid;
+     grid-template-columns: 400px;
+     gap: 1em;
+     justify-content: center;
+     align-items: center;
     }
-  @media (min-width: 1000px) {
+  }
+  @media (min-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+    .sobre .grid {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      justify-content: center;
+      align-items: center;
+     }
+  }
+  @media (min-width: 1440px) {
     body {
       font-size: 20px;
     }
   }
   header {
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -42,7 +59,7 @@ body {
   .menu a {
     display: block;
     padding: 10px;
-    font-size: 20px;
+    font-size: 1.5em;
   }
   a{
    color: red;
@@ -71,46 +88,25 @@ body {
     font-family: 'Iceberg', cursive;
     font-size: 2em;
   }
-  @media (min-width: 768px) {
-    .vida .grid {
-      grid-template-columns: 500px;
-    }
-  }
-  @media (min-width: 1024px) {
-  .img-portfolio {
-    width: 300px;
-    height: 250px;
-    object-fit: scale-down;
-  } 
-  }
-  @media (min-width: 1440px) {
-    .img-portfolio {
-      width: 500px;
-      height: 350px;
-      object-fit: scale-down;
-  }
-  }
   section {
     height: 100vh;
     width: 100vw;
+    
   }
-  .vida h2 {
+  .sobre h2 {
     font-family: 'Audiowide', cursive;
     padding: 1.5em;
     color: red;
-    font-size: 25px;
+    font-size: 2em;
   }
-  .vida .grid {
-    display: grid;
-    gap: 1.5em;
-    grid-template-columns: 500px 500px;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    padding-left: 2em;
+  .img-portfolio {
+    width: 400px;
+    height: 250px;
+    object-fit: scale-down;
   }
   figcaption {
     padding: 10px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.5em;
+    text-align: center;
   }
