@@ -17,8 +17,14 @@ body {
       background-size: 120vw 100vh;
     }
   }
+  @media (max-width:600px) {
+    .contato .icons {
+      display: grid;
+      grid-template-columns: 300px 300px;
+    }
+  }
   @media (min-width: 768px) {
-    .sobre .grid {
+    .fotos .grid {
      display: grid;
      grid-template-columns: 400px;
      gap: 1em;
@@ -30,7 +36,7 @@ body {
     body {
       font-size: 16px;
     }
-    .sobre .grid {
+    .fotos .grid {
       display: grid;
       grid-template-columns: 400px 400px;
       justify-content: center;
@@ -60,13 +66,14 @@ body {
     display: block;
     padding: 10px;
     font-size: 1.5em;
-  }
-  a{
-   color: red;
-   text-decoration: none;
+    color: red;
+    text-decoration: none;
+    transition: background .5s, color .5s, text-decoration .5s;
     }
-  a:hover{
-    background: silver;
+  .menu a:active,
+  .menu a:hover{
+    background: red;
+    color: white;
     text-decoration: underline;
   }
   .menu li {
@@ -75,6 +82,18 @@ body {
   .menu ul {
     display: flex;
     justify-content: space-around;
+  }
+  .titulo {
+    transform: translateX(-100vw);
+    animation: 1.2s linear 1s animacao-titulo forwards;
+  }
+  @keyframes animacao-titulo {
+    from {
+      transform: translateX(-100vw) rotate(0deg);
+    }
+    to {
+      transform: translateX(0) rotate(360deg);
+    }
   }
   .site-title {
     color: white;
@@ -88,25 +107,48 @@ body {
     font-family: 'Iceberg', cursive;
     font-size: 2em;
   }
-  section {
-    height: 100vh;
-    width: 100vw;
-    
+  .contato,
+  .fotos {
+    min-height: 100vh;
+    width: 100vw;   
   }
-  .sobre h2 {
+  .contato h2,
+  .fotos h2 {
     font-family: 'Audiowide', cursive;
     padding: 1.5em;
     color: red;
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .img-portfolio {
     width: 400px;
     height: 250px;
     object-fit: scale-down;
+    transition: transform 1.5s;
+  }
+  .img-portfolio:active,
+  .img-portfolio:hover {
+    transform: scale(1.5) rotate(360deg);
   }
   figcaption {
     padding: 10px;
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
+  }
+  .contato .icons {
+    text-align: center;
+  }
+  .contato a {
+    font-size: 7em;
+    background-color: white;
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+    transition: color .5s, text-shadow .5s;
+  }
+  .contato a:active,
+  .contato a:hover {
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 0px 7px rgba(140,140,140,1);
   }
