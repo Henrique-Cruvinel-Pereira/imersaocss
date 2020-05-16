@@ -13,7 +13,7 @@
         <nav class="menu">
           <ul>
             <li><a href="#header"><i class="fas fa-home"></i></a></li>
-            <li><a href="#">Sobre</a></li>
+            <li><a href="#sobre">Sobre</a></li>
             <li> <a href="#fotos">Fotos</a> </li>
             <li> <a href="#contato">Contato</a> </li>
           </ul>
@@ -23,30 +23,78 @@
         <h2 class="site-subtitle">Estudante de Engenharia Mecânica na Unesp Bauru</h2>
         <h2 class="site-subtitle">Iniciante no HTML, CSS e JS</h2>
         </div> 
-    </header>  
+    </header>
+    <section class="sobre" id="sobre"> 
+      <h2>Sobre</h2>
+
+      <p>Sou o Henrique, tenho 18 anos e nasci no dia 22/06/2001 em São Paulo capital. Moro com meus pais Cláudia e Mauro, meu irmão André e minha cachorrinha Polly. Fiz todo o meu período escolar na escola OEMAR, já conclui o Ensino Médio e atualmente estou no primeiro semestre de Engenharia Mecânica na Unesp de Bauru.
+      </p>
+
+      <p>Desde pequeno sou apaixonado por carros e caminhões. Adoro acompanhar campeonatos de automobilismo, sendo o meu favorito a Fórmula 1.Essa grande paixão por carros foi o que me motivou a escolher a carreira de engenheiro mecânico. Meu sonho na profissão é abrir uma oficina para restaurar e customizar carros.
+      </p>
+
+      <p>Também gosto bastante de tecnologia e videogame. Meus jogos favoritos são Euro Truck Simulator 2, American Truck Simulator, Car Mechanic Simulator, Rainbow Six Siege, entre outros. Meu estilo de música preferido é rock e gosto de escutar bandas como Red Hot Chili Peppers, Metallica, Iron Maiden, Guns n Roses, entre outras.No meu tempo livre toco guitarra, jogo videogame e assisto séries no Netflix e vídeos no Youtube.
+      </p>
+
+      <p>Esse site foi contruído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>. O curso foi uma experiência incrível para mim e, junto com a Quarentena Dev, foi onde adquiri um bom conhecimento de programação.
+      </p>
+    </section>
     <section class="fotos" id="fotos">
       <h2>Fotos</h2>
+
       <div class="grid">
-      <figure>
-        <img class="img-portfolio" src="./img/guitarra.jpg" alt="guitarra">
-        <figcaption>Guitarrista</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/F1.jpg" alt="F1">
-        <figcaption>Curto Fórmula 1</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/jogos.png" alt="jogos">
-        <figcaption>Jogo Euro Truck Simulator 2 e American Truck Simulator</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/V&F.jpg" alt="velozes e furiosos">
-        <figcaption>Fã de Velozes e Furiosos</figcaption>
-      </figure>
+
+       <div class="flip-card">
+         <div class="card">
+           <figure class="card-front">
+             <img class="img-portfolio" src="./img/guitarra.jpg" alt="guitarra">
+           </figure>
+          <div class="card-back">
+            <h3>Dia em que comprei minha guitarra</h3>
+          </div>
+         </div>
+       </div>
+       
+       <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/unespbauru.jpg" alt="unesp bauru">
+          </figure>
+         <div class="card-back">
+           <h3>Conhecendo o projeto do Fórmula na Unesp Bauru
+           </h3>
+         </div>
+        </div>
       </div>
+
+      <div class="flip-card">
+        <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/familia.jpg" alt="família">
+            </figure>
+         <div class="card-back">
+           <h3>Família</h3>
+         </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/18anos.jpg" alt="18 anos">
+            </figure>
+         <div class="card-back">
+           <h3>Aniversário de 18 anos</h3>
+         </div>
+        </div>
+      </div>
+
+      </div>
+
     </section>
     <section class="contato" id="contato">
-      <h2>Contato</h2>   
+      <h2>Contato</h2>
+
       <div class="grid icons">
         <a target="_blank" href="https://www.instagram.com/hcphenrique/">
           <i class="fab fa-instagram"></i>
@@ -57,9 +105,21 @@
         <a target="_blank" href="https://github.com/Henrique-Cruvinel-Pereira">
           <i class="fab fa-github"></i>
         </a>
-        <a target="_blank" href="#">
-          <i class="fas fa-envelope"></i>
-        </a>        
+        <a target="_blank" href="https://codepen.io/dashboard/">
+          <i class="fab fa-codepen"></i>
+        </a>
+
+        <div class="flip-card">
+          <div class="card">
+            <a target="_blank" href="#" class="card-front">
+              <i class="fas fa-envelope"></i>
+            </a>       
+           <div class="card-back">
+             <h3>henrique.cruvinel.pereira@gmail.com
+             </h3>
+           </div>
+          </div>
+        </div>
       </div>
     </section>
 </body>
