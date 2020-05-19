@@ -107,6 +107,12 @@ body {
     font-family: 'Iceberg', cursive;
     font-size: 2em;
   }
+  .titulo,
+  .sobre,
+  .fotos,
+  .contato{
+    background-color: rgba(0,0,0,0.7);
+  }
   .sobre,
   .contato,
   .fotos {
